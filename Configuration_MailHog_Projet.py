@@ -8,7 +8,7 @@ mailhog_port = 1025
 to_email = 'kevin.vallin@ynov.com'
 
 subject = 'test'
-body = 'Ta maman mange des pasteques'
+body = 'Test de d\'envoie'
 sender_email = 'kevin.vallin@ynov.com'
 
 message = MIMEMultipart()
@@ -20,5 +20,5 @@ message.attach(MIMEText(body, 'plain'))
 with smtplib.SMTP(mailhog_host, mailhog_port) as server:
     server.sendmail(sender_email, to_email, message.as_string())
 
-print('Voila c\'est envoyer morpion de mes deux')
+print('Voila c\'est envoyer')
 
