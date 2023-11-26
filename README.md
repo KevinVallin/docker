@@ -9,7 +9,6 @@ docker compose up
 ```
 http://localhost:8025
 http://localhost:15672
-
 ```
 ### LocalHost Auth
  ```
