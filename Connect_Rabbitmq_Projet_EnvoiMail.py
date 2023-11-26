@@ -3,7 +3,7 @@ import pika
 connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
 channel = connection.channel()
 channel.queue_declare(queue='MyQueue', durable=True)
-message = 'Hello, Roux de merde qui fait pas son taf a lheure'
+message = 'Hello, message envoyé !'
 channel.basic_publish(exchange='',
                       routing_key='MyQueue',
                       body=message,
